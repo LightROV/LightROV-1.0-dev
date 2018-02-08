@@ -2,7 +2,7 @@
 第一版测试repo
 
 ## 假的架构图
-!["假的架构图"](../Plan4Spring/src/架构图.png)
+!["假的架构图"](./images/架构图.png)
 
 ## namespace
 | namespace       | 用途 |
