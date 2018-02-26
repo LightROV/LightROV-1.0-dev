@@ -1,0 +1,9 @@
+/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/build/CMakeFiles/edit_cache.dir
+/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/build/CMakeFiles/rebuild_cache.dir
+/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/build/bin/network/CMakeFiles/rebuild_cache.dir
+/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/build/bin/network/CMakeFiles/edit_cache.dir
+/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/build/bin/network/CMakeFiles/listener.dir
+/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/build/bin/log/CMakeFiles/edit_cache.dir
+/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/build/bin/log/CMakeFiles/rebuild_cache.dir
+/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/build/bin/log/CMakeFiles/log_tester.dir
+/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/build/bin/log/CMakeFiles/log.dir

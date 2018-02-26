@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/log/log.hpp
+iostream
+-
+
+/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/log/log_tester.cpp
+log.hpp
+/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/log/log.hpp
+

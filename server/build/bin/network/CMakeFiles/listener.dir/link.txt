@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblistener.a  CMakeFiles/listener.dir/listener.cpp.o
+/usr/bin/ranlib liblistener.a

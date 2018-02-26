@@ -60,6 +60,155 @@ CMAKE_SOURCE_DIR = /home/itsl/Documents/LightROV/LightROV-1.0-dev/server
 CMAKE_BINARY_DIR = /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug
 
 #=============================================================================
+# Directory level rules for directory bin/network
+
+# Convenience name for "all" pass in the directory.
+bin/network/all: bin/network/CMakeFiles/listener.dir/all
+
+.PHONY : bin/network/all
+
+# Convenience name for "clean" pass in the directory.
+bin/network/clean: bin/network/CMakeFiles/listener.dir/clean
+
+.PHONY : bin/network/clean
+
+# Convenience name for "preinstall" pass in the directory.
+bin/network/preinstall:
+
+.PHONY : bin/network/preinstall
+
+#=============================================================================
+# Target rules for target bin/network/CMakeFiles/listener.dir
+
+# All Build rule for target.
+bin/network/CMakeFiles/listener.dir/all:
+	$(MAKE) -f bin/network/CMakeFiles/listener.dir/build.make bin/network/CMakeFiles/listener.dir/depend
+	$(MAKE) -f bin/network/CMakeFiles/listener.dir/build.make bin/network/CMakeFiles/listener.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target listener"
+.PHONY : bin/network/CMakeFiles/listener.dir/all
+
+# Include target in all.
+all: bin/network/CMakeFiles/listener.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+bin/network/CMakeFiles/listener.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 bin/network/CMakeFiles/listener.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug/CMakeFiles 0
+.PHONY : bin/network/CMakeFiles/listener.dir/rule
+
+# Convenience name for target.
+listener: bin/network/CMakeFiles/listener.dir/rule
+
+.PHONY : listener
+
+# clean rule for target.
+bin/network/CMakeFiles/listener.dir/clean:
+	$(MAKE) -f bin/network/CMakeFiles/listener.dir/build.make bin/network/CMakeFiles/listener.dir/clean
+.PHONY : bin/network/CMakeFiles/listener.dir/clean
+
+# clean rule for target.
+clean: bin/network/CMakeFiles/listener.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory bin/log
+
+# Convenience name for "all" pass in the directory.
+bin/log/all: bin/log/CMakeFiles/log_tester.dir/all
+bin/log/all: bin/log/CMakeFiles/log.dir/all
+
+.PHONY : bin/log/all
+
+# Convenience name for "clean" pass in the directory.
+bin/log/clean: bin/log/CMakeFiles/log_tester.dir/clean
+bin/log/clean: bin/log/CMakeFiles/log.dir/clean
+
+.PHONY : bin/log/clean
+
+# Convenience name for "preinstall" pass in the directory.
+bin/log/preinstall:
+
+.PHONY : bin/log/preinstall
+
+#=============================================================================
+# Target rules for target bin/log/CMakeFiles/log_tester.dir
+
+# All Build rule for target.
+bin/log/CMakeFiles/log_tester.dir/all: bin/log/CMakeFiles/log.dir/all
+	$(MAKE) -f bin/log/CMakeFiles/log_tester.dir/build.make bin/log/CMakeFiles/log_tester.dir/depend
+	$(MAKE) -f bin/log/CMakeFiles/log_tester.dir/build.make bin/log/CMakeFiles/log_tester.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target log_tester"
+.PHONY : bin/log/CMakeFiles/log_tester.dir/all
+
+# Include target in all.
+all: bin/log/CMakeFiles/log_tester.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+bin/log/CMakeFiles/log_tester.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 bin/log/CMakeFiles/log_tester.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug/CMakeFiles 0
+.PHONY : bin/log/CMakeFiles/log_tester.dir/rule
+
+# Convenience name for target.
+log_tester: bin/log/CMakeFiles/log_tester.dir/rule
+
+.PHONY : log_tester
+
+# clean rule for target.
+bin/log/CMakeFiles/log_tester.dir/clean:
+	$(MAKE) -f bin/log/CMakeFiles/log_tester.dir/build.make bin/log/CMakeFiles/log_tester.dir/clean
+.PHONY : bin/log/CMakeFiles/log_tester.dir/clean
+
+# clean rule for target.
+clean: bin/log/CMakeFiles/log_tester.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target bin/log/CMakeFiles/log.dir
+
+# All Build rule for target.
+bin/log/CMakeFiles/log.dir/all:
+	$(MAKE) -f bin/log/CMakeFiles/log.dir/build.make bin/log/CMakeFiles/log.dir/depend
+	$(MAKE) -f bin/log/CMakeFiles/log.dir/build.make bin/log/CMakeFiles/log.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target log"
+.PHONY : bin/log/CMakeFiles/log.dir/all
+
+# Include target in all.
+all: bin/log/CMakeFiles/log.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+bin/log/CMakeFiles/log.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 bin/log/CMakeFiles/log.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug/CMakeFiles 0
+.PHONY : bin/log/CMakeFiles/log.dir/rule
+
+# Convenience name for target.
+log: bin/log/CMakeFiles/log.dir/rule
+
+.PHONY : log
+
+# clean rule for target.
+bin/log/CMakeFiles/log.dir/clean:
+	$(MAKE) -f bin/log/CMakeFiles/log.dir/build.make bin/log/CMakeFiles/log.dir/clean
+.PHONY : bin/log/CMakeFiles/log.dir/clean
+
+# clean rule for target.
+clean: bin/log/CMakeFiles/log.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.

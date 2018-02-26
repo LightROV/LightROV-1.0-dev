@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/network/./callback_interface.hpp
+iostream
+-
+
+/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/network/./listener.hpp
+string
+-
+boost/asio.hpp
+-
+boost/array.hpp
+-
+boost/thread.hpp
+-
+callback_interface.hpp
+/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/network/./callback_interface.hpp
+
+/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/network/listener.cpp
+./listener.hpp
+/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/network/./listener.hpp
+boost/asio.hpp
+-
+boost/bind.hpp
+-
+boost/thread.hpp
+-
+

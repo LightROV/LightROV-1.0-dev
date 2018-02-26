@@ -110,6 +110,45 @@ depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named listener
+
+# Build rule for target.
+listener: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 listener
+.PHONY : listener
+
+# fast build rule for target.
+listener/fast:
+	$(MAKE) -f bin/network/CMakeFiles/listener.dir/build.make bin/network/CMakeFiles/listener.dir/build
+.PHONY : listener/fast
+
+#=============================================================================
+# Target rules for targets named log_tester
+
+# Build rule for target.
+log_tester: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 log_tester
+.PHONY : log_tester
+
+# fast build rule for target.
+log_tester/fast:
+	$(MAKE) -f bin/log/CMakeFiles/log_tester.dir/build.make bin/log/CMakeFiles/log_tester.dir/build
+.PHONY : log_tester/fast
+
+#=============================================================================
+# Target rules for targets named log
+
+# Build rule for target.
+log: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 log
+.PHONY : log
+
+# fast build rule for target.
+log/fast:
+	$(MAKE) -f bin/log/CMakeFiles/log.dir/build.make bin/log/CMakeFiles/log.dir/build
+.PHONY : log/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -118,6 +157,9 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... listener"
+	@echo "... log_tester"
+	@echo "... log"
 .PHONY : help
 
 
