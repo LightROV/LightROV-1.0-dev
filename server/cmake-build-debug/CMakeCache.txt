@@ -212,6 +212,15 @@ ProcessorCount_cmd_getconf:FILEPATH=/usr/bin/getconf
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/sbin/sysctl
 
+//Value Computed by CMake
+exception_BINARY_DIR:STATIC=/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug/bin/exception
+
+//Dependencies for target
+exception_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+exception_SOURCE_DIR:STATIC=/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/exception
+
 //Dependencies for target
 listener_LIB_DEPENDS:STATIC=
 
@@ -335,7 +344,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

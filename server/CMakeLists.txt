@@ -5,3 +5,4 @@ set(CMAKE_CXX_STANDARD 11)
 
 add_subdirectory(network bin/network)
 add_subdirectory(log bin/log)
+add_subdirectory(exception bin/exception)

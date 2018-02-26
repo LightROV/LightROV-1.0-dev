@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug/CMakeFiles /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug/CMakeFiles /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug/bin/exception/CMakeFiles/progress.marks
+	cd /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 bin/exception/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 bin/exception/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,70 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 bin/exception/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 bin/exception/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named listener
+# Convenience name for target.
+bin/exception/CMakeFiles/exception.dir/rule:
+	cd /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 bin/exception/CMakeFiles/exception.dir/rule
+.PHONY : bin/exception/CMakeFiles/exception.dir/rule
 
-# Build rule for target.
-listener: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 listener
-.PHONY : listener
+# Convenience name for target.
+exception: bin/exception/CMakeFiles/exception.dir/rule
 
-# fast build rule for target.
-listener/fast:
-	$(MAKE) -f bin/network/CMakeFiles/listener.dir/build.make bin/network/CMakeFiles/listener.dir/build
-.PHONY : listener/fast
-
-#=============================================================================
-# Target rules for targets named log_tester
-
-# Build rule for target.
-log_tester: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 log_tester
-.PHONY : log_tester
-
-# fast build rule for target.
-log_tester/fast:
-	$(MAKE) -f bin/log/CMakeFiles/log_tester.dir/build.make bin/log/CMakeFiles/log_tester.dir/build
-.PHONY : log_tester/fast
-
-#=============================================================================
-# Target rules for targets named log
-
-# Build rule for target.
-log: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 log
-.PHONY : log
-
-# fast build rule for target.
-log/fast:
-	$(MAKE) -f bin/log/CMakeFiles/log.dir/build.make bin/log/CMakeFiles/log.dir/build
-.PHONY : log/fast
-
-#=============================================================================
-# Target rules for targets named exception
-
-# Build rule for target.
-exception: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 exception
 .PHONY : exception
 
 # fast build rule for target.
 exception/fast:
-	$(MAKE) -f bin/exception/CMakeFiles/exception.dir/build.make bin/exception/CMakeFiles/exception.dir/build
+	cd /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug && $(MAKE) -f bin/exception/CMakeFiles/exception.dir/build.make bin/exception/CMakeFiles/exception.dir/build
 .PHONY : exception/fast
+
+exception.o: exception.cpp.o
+
+.PHONY : exception.o
+
+# target to build an object file
+exception.cpp.o:
+	cd /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug && $(MAKE) -f bin/exception/CMakeFiles/exception.dir/build.make bin/exception/CMakeFiles/exception.dir/exception.cpp.o
+.PHONY : exception.cpp.o
+
+exception.i: exception.cpp.i
+
+.PHONY : exception.i
+
+# target to preprocess a source file
+exception.cpp.i:
+	cd /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug && $(MAKE) -f bin/exception/CMakeFiles/exception.dir/build.make bin/exception/CMakeFiles/exception.dir/exception.cpp.i
+.PHONY : exception.cpp.i
+
+exception.s: exception.cpp.s
+
+.PHONY : exception.s
+
+# target to generate assembly for a file
+exception.cpp.s:
+	cd /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug && $(MAKE) -f bin/exception/CMakeFiles/exception.dir/build.make bin/exception/CMakeFiles/exception.dir/exception.cpp.s
+.PHONY : exception.cpp.s
 
 # Help Target
 help:
@@ -170,10 +160,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... listener"
-	@echo "... log_tester"
-	@echo "... log"
 	@echo "... exception"
+	@echo "... exception.o"
+	@echo "... exception.i"
+	@echo "... exception.s"
 .PHONY : help
 
 
@@ -185,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

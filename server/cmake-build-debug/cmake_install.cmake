@@ -36,6 +36,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug/bin/network/cmake_install.cmake")
   include("/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug/bin/log/cmake_install.cmake")
+  include("/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug/bin/exception/cmake_install.cmake")
 
 endif()
 

@@ -7,3 +7,6 @@
 /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug/bin/log/CMakeFiles/log_tester.dir
 /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug/bin/log/CMakeFiles/edit_cache.dir
 /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug/bin/log/CMakeFiles/log.dir
+/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug/bin/exception/CMakeFiles/rebuild_cache.dir
+/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug/bin/exception/CMakeFiles/edit_cache.dir
+/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug/bin/exception/CMakeFiles/exception.dir

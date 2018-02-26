@@ -5,7 +5,7 @@
 		<Option title="LightRO-1.0-mod-network"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\network\;CMake Files\log\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\network\;CMake Files\log\;CMake Files\exception\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug/bin/network"/>
@@ -84,6 +84,12 @@
 		</Unit>
 		<Unit filename="/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/log/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\log\"/>
+		</Unit>
+		<Unit filename="/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/exception/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\exception\"/>
+		</Unit>
+		<Unit filename="/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/exception/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\exception\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

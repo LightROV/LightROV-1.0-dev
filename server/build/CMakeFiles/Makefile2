@@ -84,7 +84,7 @@ bin/network/preinstall:
 bin/network/CMakeFiles/listener.dir/all:
 	$(MAKE) -f bin/network/CMakeFiles/listener.dir/build.make bin/network/CMakeFiles/listener.dir/depend
 	$(MAKE) -f bin/network/CMakeFiles/listener.dir/build.make bin/network/CMakeFiles/listener.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/build/CMakeFiles --progress-num=1,2 "Built target listener"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/build/CMakeFiles --progress-num=3,4 "Built target listener"
 .PHONY : bin/network/CMakeFiles/listener.dir/all
 
 # Include target in all.
@@ -141,7 +141,7 @@ bin/log/preinstall:
 bin/log/CMakeFiles/log_tester.dir/all: bin/log/CMakeFiles/log.dir/all
 	$(MAKE) -f bin/log/CMakeFiles/log_tester.dir/build.make bin/log/CMakeFiles/log_tester.dir/depend
 	$(MAKE) -f bin/log/CMakeFiles/log_tester.dir/build.make bin/log/CMakeFiles/log_tester.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/build/CMakeFiles --progress-num=5,6 "Built target log_tester"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/build/CMakeFiles --progress-num=7,8 "Built target log_tester"
 .PHONY : bin/log/CMakeFiles/log_tester.dir/all
 
 # Include target in all.
@@ -178,7 +178,7 @@ clean: bin/log/CMakeFiles/log_tester.dir/clean
 bin/log/CMakeFiles/log.dir/all:
 	$(MAKE) -f bin/log/CMakeFiles/log.dir/build.make bin/log/CMakeFiles/log.dir/depend
 	$(MAKE) -f bin/log/CMakeFiles/log.dir/build.make bin/log/CMakeFiles/log.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/build/CMakeFiles --progress-num=3,4 "Built target log"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/build/CMakeFiles --progress-num=5,6 "Built target log"
 .PHONY : bin/log/CMakeFiles/log.dir/all
 
 # Include target in all.
@@ -205,6 +205,61 @@ bin/log/CMakeFiles/log.dir/clean:
 
 # clean rule for target.
 clean: bin/log/CMakeFiles/log.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory bin/exception
+
+# Convenience name for "all" pass in the directory.
+bin/exception/all: bin/exception/CMakeFiles/exception.dir/all
+
+.PHONY : bin/exception/all
+
+# Convenience name for "clean" pass in the directory.
+bin/exception/clean: bin/exception/CMakeFiles/exception.dir/clean
+
+.PHONY : bin/exception/clean
+
+# Convenience name for "preinstall" pass in the directory.
+bin/exception/preinstall:
+
+.PHONY : bin/exception/preinstall
+
+#=============================================================================
+# Target rules for target bin/exception/CMakeFiles/exception.dir
+
+# All Build rule for target.
+bin/exception/CMakeFiles/exception.dir/all:
+	$(MAKE) -f bin/exception/CMakeFiles/exception.dir/build.make bin/exception/CMakeFiles/exception.dir/depend
+	$(MAKE) -f bin/exception/CMakeFiles/exception.dir/build.make bin/exception/CMakeFiles/exception.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/build/CMakeFiles --progress-num=1,2 "Built target exception"
+.PHONY : bin/exception/CMakeFiles/exception.dir/all
+
+# Include target in all.
+all: bin/exception/CMakeFiles/exception.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+bin/exception/CMakeFiles/exception.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 bin/exception/CMakeFiles/exception.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/build/CMakeFiles 0
+.PHONY : bin/exception/CMakeFiles/exception.dir/rule
+
+# Convenience name for target.
+exception: bin/exception/CMakeFiles/exception.dir/rule
+
+.PHONY : exception
+
+# clean rule for target.
+bin/exception/CMakeFiles/exception.dir/clean:
+	$(MAKE) -f bin/exception/CMakeFiles/exception.dir/build.make bin/exception/CMakeFiles/exception.dir/clean
+.PHONY : bin/exception/CMakeFiles/exception.dir/clean
+
+# clean rule for target.
+clean: bin/exception/CMakeFiles/exception.dir/clean
 
 .PHONY : clean
 
