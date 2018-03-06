@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.ipp": "cpp",
+        "exception": "cpp",
+        "system_error": "cpp",
+        "iostream": "cpp"
+    }
+}

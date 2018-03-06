@@ -31,11 +31,13 @@ protected:
     boost::asio::io_service io;
     boost::asio::ip::tcp::socket socket;
     boost::asio::ip::tcp::acceptor acceptor;
-    boost::thread* listenThread;
+    boost::asio::io_service::work worker;
+    boost::thread_group workerGroup;
     CallBackInterface* dataHandler;
     boost::array<char, 4096> buff;
     bool LISTENING;
     int port;
+    short workers;
 
 public:
     /*
@@ -43,7 +45,7 @@ public:
      * 
      * @param int port 要监听的端口号
      */
-    Listener(int port);
+    Listener(unsigned short port);
 
     /*
      * 绑定回调函数

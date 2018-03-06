@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/exception/exception.hpp
+iostream
+-
+
 /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/network/./callback_interface.hpp
 iostream
 -
@@ -31,4 +35,6 @@ boost/bind.hpp
 -
 boost/thread.hpp
 -
+../exception/exception.hpp
+/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/exception/exception.hpp
 

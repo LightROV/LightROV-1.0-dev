@@ -1,11 +1,11 @@
 //
 // Created by itsl on 18-2-26.
 //
+#include <exception>
+#include <string>
 
 #ifndef LIGHTRO_1_0_SERVER_EXCEPTION_HPP
 #define LIGHTRO_1_0_SERVER_EXCEPTION_HPP
-
-#include <iostream>
 
 namespace ltrov{
 
