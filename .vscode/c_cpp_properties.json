@@ -5,11 +5,9 @@
             "includePath": [
                 "/usr/include",
                 "/usr/local/include",
-                "/usr/include/c++",
-                "/usr/include/c++/5",
+                "/usr/include/linux",
                 "${workspaceRoot}",
-                "/usr/include/x86_64-linux-gnu/c++/5",
-                "/usr/include/linux"
+                "/usr/include/c++/5"
             ],
             "defines": [],
             "intelliSenseMode": "clang-x64",
@@ -17,6 +15,7 @@
                 "path": [
                     "/usr/include",
                     "/usr/local/include",
+                    "/usr/include/linux",
                     "${workspaceRoot}"
                 ],
                 "limitSymbolsToIncludedHeaders": true,

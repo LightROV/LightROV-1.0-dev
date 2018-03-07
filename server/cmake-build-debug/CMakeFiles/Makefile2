@@ -64,16 +64,18 @@ CMAKE_BINARY_DIR = /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-b
 
 # Convenience name for "all" pass in the directory.
 bin/network/all: bin/network/CMakeFiles/listener.dir/all
+bin/network/all: bin/network/unittest/all
 
 .PHONY : bin/network/all
 
 # Convenience name for "clean" pass in the directory.
 bin/network/clean: bin/network/CMakeFiles/listener.dir/clean
+bin/network/clean: bin/network/unittest/clean
 
 .PHONY : bin/network/clean
 
 # Convenience name for "preinstall" pass in the directory.
-bin/network/preinstall:
+bin/network/preinstall: bin/network/unittest/preinstall
 
 .PHONY : bin/network/preinstall
 
@@ -111,6 +113,62 @@ bin/network/CMakeFiles/listener.dir/clean:
 
 # clean rule for target.
 clean: bin/network/CMakeFiles/listener.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory bin/network/unittest
+
+# Convenience name for "all" pass in the directory.
+bin/network/unittest/all: bin/network/unittest/CMakeFiles/tester.dir/all
+
+.PHONY : bin/network/unittest/all
+
+# Convenience name for "clean" pass in the directory.
+bin/network/unittest/clean: bin/network/unittest/CMakeFiles/tester.dir/clean
+
+.PHONY : bin/network/unittest/clean
+
+# Convenience name for "preinstall" pass in the directory.
+bin/network/unittest/preinstall:
+
+.PHONY : bin/network/unittest/preinstall
+
+#=============================================================================
+# Target rules for target bin/network/unittest/CMakeFiles/tester.dir
+
+# All Build rule for target.
+bin/network/unittest/CMakeFiles/tester.dir/all: bin/network/CMakeFiles/listener.dir/all
+bin/network/unittest/CMakeFiles/tester.dir/all: bin/exception/CMakeFiles/exception.dir/all
+	$(MAKE) -f bin/network/unittest/CMakeFiles/tester.dir/build.make bin/network/unittest/CMakeFiles/tester.dir/depend
+	$(MAKE) -f bin/network/unittest/CMakeFiles/tester.dir/build.make bin/network/unittest/CMakeFiles/tester.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug/CMakeFiles --progress-num=9,10,11 "Built target tester"
+.PHONY : bin/network/unittest/CMakeFiles/tester.dir/all
+
+# Include target in all.
+all: bin/network/unittest/CMakeFiles/tester.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+bin/network/unittest/CMakeFiles/tester.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 bin/network/unittest/CMakeFiles/tester.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug/CMakeFiles 0
+.PHONY : bin/network/unittest/CMakeFiles/tester.dir/rule
+
+# Convenience name for target.
+tester: bin/network/unittest/CMakeFiles/tester.dir/rule
+
+.PHONY : tester
+
+# clean rule for target.
+bin/network/unittest/CMakeFiles/tester.dir/clean:
+	$(MAKE) -f bin/network/unittest/CMakeFiles/tester.dir/build.make bin/network/unittest/CMakeFiles/tester.dir/clean
+.PHONY : bin/network/unittest/CMakeFiles/tester.dir/clean
+
+# clean rule for target.
+clean: bin/network/unittest/CMakeFiles/tester.dir/clean
 
 .PHONY : clean
 

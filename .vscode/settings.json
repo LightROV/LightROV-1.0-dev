@@ -3,6 +3,7 @@
         "*.ipp": "cpp",
         "exception": "cpp",
         "system_error": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "cstdlib": "cpp"
     }
 }

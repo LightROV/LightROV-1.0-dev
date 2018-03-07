@@ -11,7 +11,7 @@
 #ifndef LTROV_SERVER_NETWORK_LISTENER_HPP_
 #define LTROV_SERVER_NETWORK_LISTENER_HPP_
 
-#include <string>
+#include <iostream>
 
 #include <boost/asio.hpp>
 #include <boost/array.hpp>
@@ -20,6 +20,8 @@
 #include "callback_interface.hpp"
 
 using ltrov::network::CallBackInterface;
+
+typedef boost::asio::ip::tcp boostTCP;
 
 namespace ltrov{
 namespace network{
@@ -35,17 +37,23 @@ protected:
     boost::thread_group workerGroup;
     CallBackInterface* dataHandler;
     boost::array<char, 4096> buff;
+    unsigned short port;
     bool LISTENING;
-    int port;
     short workers;
 
 public:
-    /*
+    /**
      * 构造函数
      * 
      * @param int port 要监听的端口号
      */
-    Listener(unsigned short port);
+    Listener(unsigned short port, short workers);
+
+    /**
+     * 虚析构函数
+     * @return void
+     */
+    virtual ~Listener();
 
     /*
      * 绑定回调函数
@@ -56,6 +64,13 @@ public:
     void bind(CallBackInterface* dataHandler);
 
     /*
+     * 
+     */
+    void workerStart();
+
+    void registerNewAcceptor();
+
+    /*
      * 开始监听
      */
     void start();
@@ -63,17 +78,12 @@ public:
     /* 
      * 接收消息的回调
      */
-    void onAccept();
+    void onAccept(const boost::system::error_code& error, boostTCP::socket** sock);
 
     /*
      * 回调的封装
      */
-    void onRecieveHandler(std::size_t length);
-
-    /* 
-     * 监听器
-     */
-    void listenHandler();
+    void onReceiveHandler(std::size_t length, boostTCP::socket** sock);
 };
 
 }   // namespace udp

@@ -11,6 +11,8 @@ exception.hpp
 /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/exception/exception.hpp
 
 /home/itsl/Documents/LightROV/LightROV-1.0-dev/server/exception/exception.hpp
-iostream
+exception
+-
+string
 -
 

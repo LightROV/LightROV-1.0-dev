@@ -10,13 +10,21 @@
 
 #include <iostream>
 
+#include <boost/asio.hpp>
+
 namespace ltrov{
 namespace network{
 
 class CallBackInterface
 {
 public:
-    virtual void onDataReceived(std::string& data) = 0;
+    /**
+     * 回调函数
+     * @param data
+     * @param sock
+     */
+    virtual void onDataReceived(std::string& data,
+                                boost::asio::ip::tcp::socket** sock) = 0;
 };
 
 }   // namespace network

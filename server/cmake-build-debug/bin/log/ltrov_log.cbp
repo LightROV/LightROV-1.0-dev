@@ -5,7 +5,7 @@
 		<Option title="ltrov_log"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\network\;CMake Files\log\;CMake Files\exception\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\network\;CMake Files\network\unit_test\;CMake Files\log\;CMake Files\exception\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/cmake-build-debug/bin/log"/>
@@ -127,6 +127,15 @@
 		</Unit>
 		<Unit filename="/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/network/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\network\"/>
+		</Unit>
+		<Unit filename="/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/network/unit_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\network\unit_test\"/>
+		</Unit>
+		<Unit filename="/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/network/unit_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\network\unit_test\"/>
+		</Unit>
+		<Unit filename="/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/network/unit_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\network\unit_test\"/>
 		</Unit>
 		<Unit filename="/home/itsl/Documents/LightROV/LightROV-1.0-dev/server/log/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\log\"/>

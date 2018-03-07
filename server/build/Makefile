@@ -124,6 +124,19 @@ listener/fast:
 .PHONY : listener/fast
 
 #=============================================================================
+# Target rules for targets named tester
+
+# Build rule for target.
+tester: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tester
+.PHONY : tester
+
+# fast build rule for target.
+tester/fast:
+	$(MAKE) -f bin/network/unittest/CMakeFiles/tester.dir/build.make bin/network/unittest/CMakeFiles/tester.dir/build
+.PHONY : tester/fast
+
+#=============================================================================
 # Target rules for targets named log_tester
 
 # Build rule for target.
@@ -171,6 +184,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... listener"
+	@echo "... tester"
 	@echo "... log_tester"
 	@echo "... log"
 	@echo "... exception"
