@@ -15,13 +15,9 @@ namespace scheduler{
 
 class Scheduler{
 protected:
-    const int PORT;
     
 public:
-    Scheduler(int port) :
-        PORT(port) {
-        
-    }
+
 
 };
 

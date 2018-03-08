@@ -103,7 +103,11 @@ void Listener::onReceiveHandler(std::size_t length,
             + "'."
     );
     dataHandler->onDataReceived(data, sock);
-    if ((*sock)->is_open()) registerAsyncReceive(sock);
+    // NOTE: sock is unusable when it's closed.
+    if ((*sock)->is_open())
+        registerAsyncReceive(sock);
+    else
+        delete *sock;
 }
 
 Listener::~Listener() {

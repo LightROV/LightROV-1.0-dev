@@ -12,8 +12,8 @@ namespace ltrov{
 namespace scheduler{
 
 namespace Events{
-    const int REQUEST_VIDEO_OPEN =      0x6666;
-    const int REQUEST_VIDEO_CLOSE =     0x2333;
+    extern const int REQUEST_VIDEO_OPEN;
+    extern const int REQUEST_VIDEO_CLOSE;
 }   // namespace Events
 
 }   // namespace scheduler
