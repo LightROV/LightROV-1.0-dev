@@ -13,6 +13,8 @@ class on_receive_callback: public CallBackInterface
 {
 public:
     void onDataReceived(std::string& data, boost::asio::ip::tcp::socket** sock);
+
+    void onSocketClosed(ltrov::network::tcp::Listener &listener) override;
 };
 
 

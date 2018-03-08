@@ -29,6 +29,8 @@ namespace tcp{
 
 class Listener 
 {
+private:
+
 protected:
     boost::asio::io_service io;
     boost::asio::ip::tcp::socket socket;
@@ -38,13 +40,22 @@ protected:
     CallBackInterface* dataHandler;
     boost::array<char, 4096> buff;
     unsigned short port;
-    bool LISTENING;
     short workers;
+
+    /**
+     * 注册异步接收数据
+     * @param sock 连接的socket
+     */
+    void registerAsyncReceive(boostTCP::socket** sock);
+
+    /**
+     * 启动worker
+     */
+    void workerStart();
 
 public:
     /**
      * 构造函数
-     * 
      * @param int port 要监听的端口号
      */
     Listener(unsigned short port, short workers);
@@ -55,38 +66,43 @@ public:
      */
     virtual ~Listener();
 
-    /*
+    /**
      * 绑定回调函数
-     * 
      * @param callback 回调函数指针
      * @return void
      */
     void bind(CallBackInterface* dataHandler);
 
-    /*
-     * 
+    /**
+     * 开启新的监听
      */
-    void workerStart();
-
     void registerNewAcceptor();
 
-    /*
+    /**
      * 开始监听
      */
     void start();
 
-    /* 
-     * 接收消息的回调
+    /**
+     *
+     * @param error
+     * @param sock
      */
-    void onAccept(const boost::system::error_code& error, boostTCP::socket** sock);
+    void onAccept(const boost::system::error_code& error,
+                  boostTCP::socket** sock);
 
-    /*
+    /**
      * 回调的封装
+     * @param length
+     * @param error
+     * @param sock
      */
-    void onReceiveHandler(std::size_t length, boostTCP::socket** sock);
+    void onReceiveHandler(std::size_t length,
+                          const boost::system::error_code& error,
+                          boostTCP::socket** sock);
 };
 
-}   // namespace udp
+}   // namespace tcp
 }   // namespace network
 }   // namespace ltrov
 

@@ -15,4 +15,4 @@ SET(USED_LIBS ${Boost_SYSTEM_LIBRARY} ${Boost_THREAD_LIBRARY} ${Boost_REGEX_LIBR
 ADD_LIBRARY(listener STATIC listener.cpp)
 TARGET_LINK_LIBRARIES(listener ${USED_LIBS})
 
-add_subdirectory(unit_test unit_test)
+add_subdirectory(unit_test)
