@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/tester.dir/Tester.cpp.o CMakeFiles/tester.dir/OnReceiveCallback.cpp.o  -o tester /usr/lib/x86_64-linux-gnu/libboost_system.so /usr/lib/x86_64-linux-gnu/libboost_thread.so /usr/lib/x86_64-linux-gnu/libboost_regex.so ../liblistener.a ../../exception/libexception.a -lboost_thread 

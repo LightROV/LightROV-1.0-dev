@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/log_tester.dir/log_tester.cpp.o  -o log_tester liblog.a 

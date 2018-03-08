@@ -9,4 +9,4 @@ SET(USED_LIBS ${Boost_SYSTEM_LIBRARY} ${Boost_THREAD_LIBRARY} ${Boost_REGEX_LIBR
 
 add_executable(tester Tester.cpp OnReceiveCallback.cpp)
 
-target_link_libraries(tester ${USED_LIBS} listener exception boost_thread)
+target_link_libraries(tester ${USED_LIBS} listener exception log boost_thread)
