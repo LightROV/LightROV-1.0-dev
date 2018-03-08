@@ -1,2 +1,6 @@
 #the push shell
 push
+.idea
+.vscode
+cmake-build-debug
+server/build
