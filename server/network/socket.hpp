@@ -12,15 +12,13 @@
 namespace ltrov{
 namespace network{
 
-template <class SOCK_TYPE>
+template <typename SOCK_TYPE>
 class Socket {
 protected:
     SOCK_TYPE** socket;
 
 public:
-    Socket();
-
-    virtual ~Socket();
+    explicit Socket(SOCK_TYPE** socket);
 
     /**
      * async write

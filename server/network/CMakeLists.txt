@@ -10,9 +10,15 @@ IF(Boost_FOUND)
 ENDIF(Boost_FOUND)
 
 # Boost 链接库
-SET(USED_LIBS ${Boost_SYSTEM_LIBRARY} ${Boost_THREAD_LIBRARY} ${Boost_REGEX_LIBRARY})
+SET(BOOST_LIBS ${Boost_SYSTEM_LIBRARY} ${Boost_THREAD_LIBRARY} ${Boost_REGEX_LIBRARY})
 
 ADD_LIBRARY(listener STATIC listener.cpp)
-TARGET_LINK_LIBRARIES(listener ${USED_LIBS})
+TARGET_LINK_LIBRARIES(listener ${BOOST_LIBS})
 
-add_subdirectory(unit_test)
+ADD_LIBRARY(basesocket STATIC socket.cpp socket.hpp)
+TARGET_LINK_LIBRARIES(basesocket ${BOOST_LIBS})
+
+ADD_LIBRARY(tcpsocket tcp_socket.cpp tcp_socket.hpp)
+TARGET_LINK_LIBRARIES(tcpsocket ${BOOST_LIBS} basesocket)
+
+ADD_SUBDIRECTORY(unit_test)
