@@ -1,6 +1,7 @@
 #the push shell
 push
-/.idea/*
+.idea
+server/.idea
 .vscode
 cmake-build-debug
 server/build
